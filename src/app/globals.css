@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  /* Template A — Cinematic Atelier */
+  --color-atelier-bg: #14110F;
+  --color-atelier-deep: #0C0A09;
+  --color-atelier-raise: #1E1A17;
+  --color-atelier-ink: #F5F0E8;
+  --color-atelier-soft: #BCB2A4;
+  --color-atelier-champagne: #C9A96A;
+
+  /* Template B — Modern Editorial Studio */
+  --color-studio-bg: #F7F6F3;
+  --color-studio-surface: #FFFFFF;
+  --color-studio-ink: #16161A;
+  --color-studio-soft: #55555E;
+  --color-studio-faint: #8A8A93;
+  --color-studio-plum: #6B2D5C;
+  --color-studio-wash: #F0E7EE;
+
+  /* Generator console */
+  --color-app-bg: #0F1115;
+  --color-app-panel: #171A20;
+  --color-app-line: #272B33;
+  --color-app-ink: #E9ECF1;
+  --color-app-soft: #9AA3B2;
+  --color-app-accent: #4F8EF7;
+
+  --font-atelier-display: "Prata", Georgia, serif;
+  --font-atelier-body: "Public Sans", system-ui, sans-serif;
+  --font-studio-display: "Archivo", system-ui, sans-serif;
+  --font-studio-accent: "Newsreader", Georgia, serif;
+  --font-app: "Public Sans", system-ui, sans-serif;
+
+  --container-site: 1240px;
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  :focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    video { display: none; }
+  }
+}
